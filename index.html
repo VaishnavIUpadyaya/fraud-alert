@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Socket Test</title>
+</head>
+
+<body>
+
+    <h1>Fraud Alert System</h1>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+
+    <script>
+
+        
+        const socket = io("http://localhost:3000");
+
+        console.log("Socket connected");
+
+        socket.emit("join_user_room", "1");
+
+        console.log("Joined room 1");
+
+        socket.on("fraud_alert", (data) => {
+
+            console.log("Fraud Alert Received");
+            console.log(data);
+
+            alert(
+                "Fraud Alert!\n" +
+                "Transaction ID: " + data.txn_id + "\n" +
+                "Message: " + data.message + "\n" +
+                "Amount: " + data.amount + "\n" +
+                "Location: " + data.location
+            );
+        });
+
+    </script>
+
+</body>
+
+</html>
