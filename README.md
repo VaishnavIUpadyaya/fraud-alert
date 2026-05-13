@@ -16,3 +16,8 @@ fraud detection
 <br/>
 <img width="1918" height="941" alt="Screenshot 2026-05-13 205259" src="https://github.com/user-attachments/assets/29b0b2c2-c2b8-4b29-82fa-c2dad6432f63" />
 client test
+<br/>
+<img width="376" height="917" alt="image" src="https://github.com/user-attachments/assets/a7837583-fd03-4fe4-b1b1-192d6caf6714" />
+<br/>
+folder structure
+<br/>
